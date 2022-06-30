@@ -10,6 +10,11 @@ nav {
     top: 0;
     z-index: 100;
 }
+/* Change Navbar styles on scroll using javascript */
+.window-scroll {
+    background-color: var(--clr-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 1, 2, 0.2)  ;
+}
 
 .nav__container {
     height: 100%;
@@ -151,11 +156,49 @@ header {
 
 /*  =============  END CATEGORIES =============== */
 
+.courses {
+    margin-top: 15rem;
+}
+.course__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course {
+    background-color: var(--clr-bg2);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    /* padding: 1rem; */
+    border-radius: 1rem;
+}
+.course:hover ,
+.course:focus {
+    background-color: transparent;
+    border-color: var(--cle-primary);
+}
+.course__image img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.course__info {
+    padding: 2rem 1rem;
+
+}
+.course__info h4 {
+    font-size: 1.1rem;
+}
+.course__info p {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.7rem;
+}
+
+/*  ============= POPULAR COURSES =============== */
 
 
 
-
-
+/*  ============= END POPULAR COURSES =============== */
 
 
 
