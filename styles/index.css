@@ -83,7 +83,7 @@ header {
 
 .categories {
     background-color: var(--clr-bg2);
-    height: 30rem;
+    height: 32rem;
 
 }
 .categories h1 {
@@ -287,13 +287,91 @@ header {
 /*  ============= END OF TESTIMONIALS SECTION =============== */
 
 
+/*  ============= FOOTER SECTION =============== */
+
+footer {
+    background-color: var(--clr-bg2);
+    padding-top: 5rem;
+    font-size: 0.8rem;
+
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+
+.footer__container > div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer__1 p {
+    margin: 1rem 0 2rem;
+}
+
+footer ul li {
+    margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover ,
+footer ul li a:focus {
+    text-decoration: underline;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem ;
+    margin-top: 2rem;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--clr-bg3);
+}
+
+/*  ============= END OF FOOTER SECTION =============== */
 
 
 
 
 
+/*  ======================================================================================
+============================== MEDIA QUERIES FOR TABLE ============================
+======================================================================================== */
 
+@media screen and (max-width:1024px){
+   .container {
+    width: var( --container-width-md);
+   }
+   h1 {
+    font-size: 2.2rem;
+   }
+   h2 {
+    font-size: 1.7rem;
+   }
+   h3 {
+    font-size: 1.4rem;
+   }
+   h4 {
+    font-size: 1.2rem;
+   }
 
+    /* ============ NAVBAR RESPONSIVE ================================ */
+   nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--clr-white);
+    cursor: pointer;
+   }
 
-
-
+   nav button#close-menu-btn {
+    display: none;
+   }
+  
+}
