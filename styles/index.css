@@ -245,7 +245,46 @@ header {
 /*  ============= END OF FAQ SECTION =============== */
 
 
+/*  ============= TESTIMONIALS SECTION =============== */
+.testimonials__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+.testimonial {
+    padding-top: 2rem;
+}
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--clr-bg2) ;
+}
+.testimonial__info {
+    text-align: center;
+}
+.testimonial__body {
+    background-color: var(--clr-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+.testimonial__body::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 48.5%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+    background: linear-gradient(135deg, transparent, var(--clr-primary), var(--clr-primary), var(--clr-primary));
 
+}
+
+/*  ============= END OF TESTIMONIALS SECTION =============== */
 
 
 

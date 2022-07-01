@@ -10,6 +10,12 @@
 
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- Swiper JS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
 </head>
 <body>
     <nav>
@@ -177,7 +183,7 @@
                     </div>
                  </article>
 
-                 <article class="faq open">
+                 <article class="faq">
                     <div class="faq__icon"><i class="uil uil-plus"></i></div>
                     <div class="question__answer">
                         <h4>How do I know the right courses for me?</h4>
@@ -236,7 +242,102 @@
          </section>
          <!-- END OF FAQ CONTAINER  -->
 
+         <!-- STUDENT TESTIMONIAL SECTION  -->
 
-<script src="./app.js"></script>
+         <section class="container testimonials__container mySwiper">
+            <h2>Student's Testimonial</h2>
+            <div class="swiper-wrapper">
+                
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./assests/student-avatars/diana-ayi.jpg" alt="diana ayi picture">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Diana Ayi</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam quidem commodi nihil veniam voluptatibus nobis doloribus rerum vitae doloremque nemo, magni ea? Ex eligendi at illum sed obcaecati corrupti.</p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./assests/student-avatars/vicky-marqueres.jpg" alt="vicky marqueres picture">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Vicky Marqueres</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam quidem commodi nihil veniam voluptatibus nobis doloribus rerum vitae doloremque nemo, magni ea? Ex eligendi at illum sed obcaecati corrupti.</p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./assests/student-avatars/hajia-bintu.jpg" alt="Hajia Bintu Picture">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Hajia Bintu</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam quidem commodi nihil veniam voluptatibus nobis doloribus rerum vitae doloremque nemo, magni ea? Ex eligendi at illum sed obcaecati corrupti.</p>
+                    </div>
+                </article>
+
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./assests/student-avatars/andrea-vega.jpg" alt="andrea vega picture">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Andrea Vega</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam quidem commodi nihil veniam voluptatibus nobis doloribus rerum vitae doloremque nemo, magni ea? Ex eligendi at illum sed obcaecati corrupti.</p>
+                    </div>
+                </article>
+
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./assests/student-avatars/ernest Acheiver.jpg" alt="ernest acheiver picture">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Ernest Acheiver</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam quidem commodi nihil veniam voluptatibus nobis doloribus rerum vitae doloremque nemo, magni ea? Ex eligendi at illum sed obcaecati corrupti.</p>
+                    </div>
+                </article>
+        
+        </div>
+         </section>
+
+                <!-- END OF STUDENT TESTIMONIAL SECTION  -->
+
+        
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./app.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                //  When Window width is >= 600px
+
+                
+            });
+        </script>
 </body>
 </html>
