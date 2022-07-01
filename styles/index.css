@@ -82,7 +82,7 @@ header {
 
 .categories {
     background-color: var(--clr-bg2);
-    height: 32rem;
+    height: 28rem;
 
 }
 .categories h1 {
@@ -276,7 +276,7 @@ header {
     width: 3rem;
     height: 3rem;
     position: absolute;
-    left: 48.5%;
+    left: calc(50% - 1.25rem);
     top: -1.5rem;
     transform: rotate(45deg);
     background: linear-gradient(135deg, transparent, var(--clr-primary), var(--clr-primary), var(--clr-primary));
@@ -361,7 +361,7 @@ footer ul li a:focus {
    }
 
     /* ============ NAVBAR RESPONSIVE ================================ */
-   nav button {
+    .nav-btn {
     display: inline-block;
     background: transparent;
     font-size: 1.8rem;
@@ -369,7 +369,7 @@ footer ul li a:focus {
     cursor: pointer;
    }
 
-   nav button#close-menu-btn {
+   .nav-btn#close-menu-btn {
     display: none;
    }
 
@@ -510,3 +510,72 @@ footer ul li a:focus {
 
 
 
+/*  ======================================================================================
+============================== MEDIA QUERIES FOR TABLE ============================
+======================================================================================== */
+
+@media screen and (max-width:600px){
+    .container {
+        width: var(--container-width-sm);
+    }
+    /* ================= NAVBAR ======================== */
+    .nav__menu {
+        right: 3%;
+    }
+
+        /* ================= HEADER ======================== */
+
+        header {
+            height: 110vh;
+        }
+        .header__container{
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            text-align: center;
+            margin-top: 0;
+        }
+        .header__left p {
+            margin-bottom: 1.4rem;
+        }
+        /* ================= CATEGORIES ======================== */
+
+        .categories__right {
+            grid-template-columns: 1fr 1fr;
+            gap: 0.7rem;
+        }
+        .category{
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+        .category__icon{
+            margin: 4px;
+            display: inline-block;
+            aspect-ratio: 1;
+        }
+        /*  ============= POPULAR COURSES =============== */
+
+        .course__container{
+            grid-template-columns: 1fr;
+
+        }
+        /*  ============= TESTIMONIALS SECTION =============== */
+
+        .testimonial__body {
+            padding: 1.6rem;
+        }
+
+        /*  ============= FOOTER SECTION =============== */
+        .footer__container {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 2rem;
+        }
+        .footer__1 p {
+            margin: 1rem auto;
+        }
+        
+        .footer__socials{
+            justify-content: center;
+        }
+
+}

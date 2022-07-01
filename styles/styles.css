@@ -7,6 +7,7 @@
     list-style: none;
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 :root {
     --clr-primary:#6c63ff;
@@ -36,6 +37,7 @@ body {
     color: var(--clr-white);
     line-height: 1.7;
     font-family: 'Montserrat', sans-serif;
+
 }
 p {
     font-size: 0.9rem;
