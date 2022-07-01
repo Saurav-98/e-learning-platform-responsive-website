@@ -22,3 +22,25 @@ faqs.forEach((faq) => {
     }
   });
 });
+
+// Show / Hide NAV Menu on Tablet and Smaller Devices
+
+const menu = document.querySelector(".nav__menu");
+const menuBtn = document.querySelector("#open-menu-btn");
+const menuCloseBtn = document.querySelector("#close-menu-btn");
+
+menuBtn.addEventListener("click", () => {
+  menu.style.display = "flex";
+  menuCloseBtn.style.display = "inline-block";
+  menuBtn.style.display = "none";
+});
+
+//  Close Nav Menu
+
+const closeNav = () => {
+  menu.style.display = "none";
+  menuCloseBtn.style.display = "none";
+  menuBtn.style.display = "inline-block";
+};
+
+menuCloseBtn.addEventListener("click", closeNav);

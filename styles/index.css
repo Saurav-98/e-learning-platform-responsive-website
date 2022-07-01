@@ -23,7 +23,7 @@ nav {
     align-items: center;
 }
 
-nav button {
+.nav-btn {
     display: none;
 }
 
@@ -60,9 +60,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 5rem
-    hei
-    100%;
+    gap: 5rem;
+    height:100%;
 }
 
 .image-box-placeholder {
@@ -373,5 +372,141 @@ footer ul li a:focus {
    nav button#close-menu-btn {
     display: none;
    }
+
+   .nav__menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+
+   }
+   .nav__menu li {
+    width: 100%;
+    height: 5.8rem;
+    
+   }
   
-}
+
+   /* Animations for NAVBAR  */
+   .roll-in-right {
+        -webkit-animation: roll-in-right 1s ease-out both;
+                animation: roll-in-right 1s ease-out both;
+    }
+
+
+    .roll-out-right {
+        -webkit-animation: roll-out-right 0.6s ease-in both;
+                animation: roll-out-right 0.6s ease-in both;
+    }
+
+    @-webkit-keyframes roll-in-right {
+        0% {
+        -webkit-transform: translateX(800px) rotate(540deg);
+                transform: translateX(800px) rotate(540deg);
+        opacity: 0;
+        }
+        100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+        opacity: 1;
+        }
+    }
+
+    @keyframes roll-in-right {
+        0% {
+        -webkit-transform: translateX(800px) rotate(540deg);
+                transform: translateX(800px) rotate(540deg);
+        opacity: 0;
+        }
+        100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+        opacity: 1;
+        }
+    }
+
+    
+  
+  
+  
+
+    /*  Animation End */
+   
+   .nav__menu li a{
+    background: var(--clr-primary);
+    box-shadow: -4rem 6rem 10rem rgba(0, 1, 2, 0.6) ;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+   }
+   .nav__menu li a:hover ,
+   .nav__menu li a:focus {
+    background-color: transparent;
+    border: 1px solid var(--clr-primary);
+    color: var(--clr-white);
+   }
+
+     /* ============ HEADER RESPONSIVE ================================ */
+     header {
+        height: 60vh;
+        margin-bottom: 4rem;
+     }
+     .header__container {
+        gap:0;
+        padding-bottom: 3rem;
+     }
+     
+
+      /* ============ CATEGORIES RESPONSIVE ================================ */
+    
+    .categories {
+        height: auto;
+    }
+    .categories__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .categories__left {
+        margin-right: 0;
+    }
+    .category {
+        padding: 1.6rem;
+    }
+
+    /* ============ POPULAR COURSES RESPONSIVE ================================ */
+
+
+    .courses {
+        margin-top: 0;
+    }
+    .course__container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ============ FAQ SECTION RESPONSIVE ================================ */
+
+    .faqs__container{
+        grid-template-columns: 1fr;
+    }
+    .faq {
+        padding: 1.6rem;
+    }
+
+     /* ============ FOOTER RESPONSIVE ================================ */
+
+     .footer__container {
+        grid-template-columns: 1fr 1fr;
+     }
+
+
+    }
+
+
+
+
