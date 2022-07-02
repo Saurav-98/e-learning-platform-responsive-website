@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ACHEIVEMENT SECTION */
+
+
+.strong-text {
+    font-weight: bold;
+}
+.light-text {
+    font-weight: lighter;
+}
+
+
+.acheivements__container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+.acheivement__info h2 {
+    text-align: left;
+    font-size: 3rem;
+}
+.acheivement__info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-block: 2rem;
+}
+.acheivements__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.acheivement__card {
+    background-color: var(--clr-bg3);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.acheivement__card:hover ,
+.acheivement__card:focus {
+    background-color: transparent;
+    border-color: var(--clr-white);
+    box-shadow: 0 2rem 2rem rgba(255,255,255,0.1);
+}
+.acheivement__card-icon {
+    background-color: var(--clr-danger);
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+
+
+.acheivement__card-data {
+    font-size: 2rem;
+    margin-block: 2rem 0.6rem;
+}
+.acheivement__card-text {
+    font-size: 1.2rem;
+}
+.acheivement__card:nth-child(2) .acheivement__card-icon {
+    background-color: var(--clr-warning);
+}
+.acheivement__card:nth-child(3) .acheivement__card-icon {
+    background-color: var(--clr-success);
+}
+.acheivement__card-icon:focus,
+.acheivement__card-icon:hover {
+    background-color: transparent;
+    border-color: var(--clr-danger);
+
+}
+.acheivement__card:nth-child(2) .acheivement__card-icon:hover,
+.acheivement__card:nth-child(2) .acheivement__card-icon:focus {
+    border-color: var(--clr-warning);
+    background-color: transparent;
+}
+
+.acheivement__card:nth-child(3) .acheivement__card-icon:hover,
+.acheivement__card:nth-child(3) .acheivement__card-icon:focus {
+    border-color: var(--clr-success);
+    background-color: transparent;
+}
+
+
+/* TEAM SECTION */
+
+.team {
+    background-color: var(--clr-bg2);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.4);
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.team__member {
+    background: var(--clr-bg3);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team__member:hover ,
+.team__member:focus {
+    background: transparent;
+    border-color: var(--clr-primary);
+}
+
+.team__member-image img {
+    filter: saturate(0);
+}
+
+.team__member:hover .team__member-image img,
+.team__member:focus .team__member-image img {
+    filter: saturate(1);
+}
+.team__member-info * {
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.team__member-info p {
+    color: var(--clr-light);
+}
+.team__member-socials {
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-primary);
+    border-radius:  1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.4);
+    transition: var(--transition);
+}
+.team__member-socials a {
+    padding: 1rem;
+
+}
+
+.team__member:hover .team__member-socials ,
+.team__member:focus .team__member-socials {
+    right: 0;
+}
+
+
+
+
+/* =============== RESPONSIVE ABOUT PAGE ( TABLETS ) ====================== */
+
+@media screen and (max-width:1264px){
+
+    .acheivements__container{
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .acheivements__image {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .team__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.4rem;
+    }
+    .team__member {
+        padding: 1.4rem;
+    }
+}
+
+/* =============== RESPONSIVE ABOUT PAGE ( MOBILE PHONES ) ====================== */
+
+
+@media screen and (max-width:600px){
+    .acheivements__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+    .team__container {
+        grid-template-columns: 1fr 1fr;
+        gap: .7rem;
+    }
+    .team__member {
+        padding: 0.7rem;
+    }
+    .team__member-info p {
+        margin-bottom: 1rem;
+    }
+}
