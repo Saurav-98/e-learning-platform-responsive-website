@@ -6,7 +6,7 @@
     background: var(--clr-bg2);
     padding: 4rem;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
     gap: 4rem;
     height: 30rem;
     margin: 7rem auto;
@@ -27,14 +27,16 @@
 }
 .contact__card h2 {
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    
 }
 .contact__card p {
     font-size: 0.9rem;
-    margin-bottom: 2rem;
+    margin-block: 2rem;
 }
 
 .contact__card-details {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -51,6 +53,7 @@
     display: flex;
     margin-top: 2rem;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .contact__card-socials-item {
@@ -78,12 +81,13 @@
     gap: 1rem;
     margin-right: 4rem;
 
+
 }
 .contact-from input , 
 .contact-from textarea
  {
     background-color: var(--clr-bg1);
-    padding: 1rem;
+    padding: 0.6rem;
     width: 100%;
     color: var(--clr-white);
     border: 1px solid transparent;
@@ -104,3 +108,82 @@
 .contact-from button {
     width: max-content;
 }
+
+/* =============== RESPONSIVE CONTACT PAGE ( TABLETS ) ====================== */
+
+
+@media screen and (max-width:1200px){
+.contact__container{
+    padding: 2.5rem;
+    gap: 3rem;
+  
+}
+.contact__card{
+    padding: 2rem;
+    bottom: 7rem;
+}
+.contact__card p {
+    margin-block: 1.2rem;
+}
+.contact__card-details{
+    gap: 1.2rem;
+}
+.contact__card-socials{
+    margin-top: 1.6rem;
+    margin-bottom: 1.4rem;
+}
+
+}
+
+/* =============== RESPONSIVE CONTACT PAGE ( MOBILE ) ====================== */
+
+@media screen and (max-width:760px){
+ .contact__container {
+    grid-template-columns: 1fr;
+    height: max-content;
+    gap: 1rem;
+    margin: 7em auto 0;
+    padding: 1rem 1rem 2rem 1rem;
+
+ }
+ .contact__card-socials {
+    margin-bottom: 1rem;
+ }
+ .contact-from {
+    width: 100%;
+    margin-right: 0;
+ }
+ .contact__form-name {
+    flex-direction: column;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
